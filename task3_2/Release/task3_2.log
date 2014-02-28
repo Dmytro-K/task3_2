@@ -1,0 +1,28 @@
+﻿Сборка начата 28.02.2014 23:36:08.
+     1>Проект "d:\MySRC\c\glbasecamp\task3\task3_2\task3_2\task3_2.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Создание каталога "D:\MySRC\c\glbasecamp\task3\task3_2\Release\".
+         Создание каталога "Release\task3_2.tlog\".
+       InitializeBuildStatus:
+         Создание "Release\task3_2.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /Wall /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c task3_2_funcs.c
+         main.c
+     1>main.c(12): warning C4242: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+         task3_2_funcs.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\MySRC\c\glbasecamp\task3\task3_2\Release\task3_2.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\MySRC\c\glbasecamp\task3\task3_2\Release\task3_2.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\MySRC\c\glbasecamp\task3\task3_2\Release\task3_2.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         Release\task3_2_funcs.obj
+         Создание кода
+     1>d:\mysrc\c\glbasecamp\task3\task3_2\task3_2\main.c(15): warning C4711: функция "GetDate" выбрана для автоматического преобразования во встроенную
+     1>d:\mysrc\c\glbasecamp\task3\task3_2\task3_2\main.c(20): warning C4711: функция "GetDate" выбрана для автоматического преобразования во встроенную
+         Создание кода завершено
+         task3_2.vcxproj -> D:\MySRC\c\glbasecamp\task3\task3_2\Release\task3_2.exe
+       FinalizeBuildStatus:
+         Файл "Release\task3_2.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Release\task3_2.tlog\task3_2.lastbuildstate".
+     1>Сборка проекта "d:\MySRC\c\glbasecamp\task3\task3_2\task3_2\task3_2.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:01.06
