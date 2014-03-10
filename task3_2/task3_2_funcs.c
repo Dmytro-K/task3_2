@@ -5,10 +5,16 @@
 
 void GetDate( char * buffer, unsigned num )
 {
-	const unsigned char months[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	const char monthsName[12][10] = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+	const unsigned char dayInMonths[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 	const unsigned daysInYear = 365;
 	unsigned char i;
 	unsigned char day=0, mon=0;
+
+	int a=1, b=2, k=5;
+
+	a = k++;
+	b = ++k;
 
 	if( num > daysInYear )
 	{
@@ -16,17 +22,17 @@ void GetDate( char * buffer, unsigned num )
 		return;
 	}
 
-	for( i = 0; i < sizeof( months ); i++ )
+	for( i = 0; i < sizeof( dayInMonths ); i++ )
 	{
-		if( num <= months[i] ) {
+		if( num <= dayInMonths[i] ) {
 			day = (char)num;
-			mon = i + 1;
+			mon = i;
 			break;
 		}
 		else
 		{
-			num -= months[i];
+			num -= dayInMonths[i];
 		}
 	}
-	sprintf( buffer, "%u %u", day, mon );
+	sprintf( buffer, "%u of %s", day, monthsName[mon] );
 }
